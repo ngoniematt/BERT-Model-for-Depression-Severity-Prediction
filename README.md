@@ -14,3 +14,20 @@ Features:
 🔁 Reproducibility: fixed seeds, deterministic flags, and run logs.
 
 🔍 Explainability: attention visualisation or SHAP overlays.
+
+
+Hyperparameters
+
+| Param            | Value  | Notes |
+|------------------|--------|-------|
+| model_name       | bert-base-uncased | Backbone |
+| max_length       | 128    | Tokenised sequence length |
+| batch_size       | 16     | Effective batch size if no grad acc |
+| lr               | 2e-5   | AdamW learning rate |
+| weight_decay     | 0.01   | L2 regularisation |
+| epochs           | 5      | Training epochs |
+| warmup_ratio     | 0.06   | Linear warmup fraction |
+| dropout          | 0.1    | Head dropout |
+| use_weighted_loss| true   | Class-imbalance mitigation |
+| oversample       | false  | Simple oversampling |
+| seed             | 42     | Reproducibility |
