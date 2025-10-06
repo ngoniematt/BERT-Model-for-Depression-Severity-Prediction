@@ -1,0 +1,32 @@
+# ===== BERT Depression Severity (CUDA 12.1 wheels) =====
+# Tested with Python 3.10–3.11 and NVIDIA drivers compatible with CUDA 12.x
+# Uses PyTorch's wheel index for CUDA-enabled binaries.
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+torch==2.3.1+cu121
+torchvision==0.18.1+cu121
+torchaudio==2.3.1+cu121
+
+# NLP stack
+transformers==4.43.3
+tokenizers==0.15.2
+datasets==2.20.0
+accelerate==0.33.0
+evaluate==0.4.2
+sentencepiece==0.2.0
+huggingface-hub==0.23.4
+
+# Science / metrics
+numpy==1.26.4
+scipy==1.12.0
+scikit-learn==1.4.2
+pandas==2.2.2
+
+# Viz & utils
+matplotlib==3.8.4
+tqdm==4.66.4
+protobuf==5.26.1
+pyyaml==6.0.1
+# Optional: uncomment if you parse emojis/hashtags specially
+# emoji==2.12.1
