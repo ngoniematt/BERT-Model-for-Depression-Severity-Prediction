@@ -9,7 +9,7 @@ Features:
 
 ⚖️ Imbalance handling: weighted loss and simple oversampling.
 
-📏 Metrics: MSE, MAE, R², accuracy/F1 via thresholded class mapping.
+📏 Metrics: MSE, R², accuracy/F1 via thresholded class mapping.
 
 🔁 Reproducibility: fixed seeds, deterministic flags, and run logs.
 
